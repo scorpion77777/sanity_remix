@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/sanity/projectDetails.ts"],
+  "sourcesContent": ["declare global {\n  interface Window {\n    ENV: {\n      SANITY_PROJECT_ID: string\n      SANITY_DATASET: string\n      SANITY_API_VERSION: string\n    }\n  }\n}\n\ntype ProjectDetails = {\n  projectId: string\n  dataset: string\n  apiVersion: string\n}\n\nexport const projectDetails = (): ProjectDetails => {\n  const {SANITY_PROJECT_ID, SANITY_DATASET, SANITY_API_VERSION} =\n    typeof document === 'undefined' ? process.env : window.ENV\n\n  return {\n    projectId: SANITY_PROJECT_ID ?? `pnkijp0b`,\n    dataset: SANITY_DATASET ?? `remix`,\n    apiVersion: SANITY_API_VERSION ?? `2022-09-19`,\n  }\n}\n"],
+  "mappings": ";;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAgBO,IAAM,iBAAiB,MAAsB;AAClD,QAAM,EAAC,mBAAmB,gBAAgB,mBAAkB,IAC1D,OAAO,aAAa,cAAc,gBAAQ,MAAM,OAAO;AAEzD,SAAO;AAAA,IACL,WAAW,gDAAqB;AAAA,IAChC,SAAS,0CAAkB;AAAA,IAC3B,YAAY,kDAAsB;AAAA,EACpC;AACF;",
+  "names": []
+}

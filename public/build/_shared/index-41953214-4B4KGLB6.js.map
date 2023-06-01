@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../node_modules/sanity/lib/_chunks/index-41953214.js"],
+  "sourcesContent": ["export { DocumentPaneProvider, DocumentPane as default } from './index-1873ab3b.js';\n//# sourceMappingURL=index-41953214.js.map\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;",
+  "names": []
+}
