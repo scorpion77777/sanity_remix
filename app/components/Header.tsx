@@ -11,7 +11,7 @@ export function Header(props: HeaderProps) {
 
   return (
     <header className="border-b border-gray-100 transition-colors duration-1000 ease-in-out dark:border-gray-900">
-      <div className="container mx-auto flex items-center justify-between p-4 lg:px-12">
+      <div className="container mx-auto flex items-center justify-between p-4 lg:px-12 sticky z-auto">
 
         <Logo siteTitle={props.siteTitle} />
 
