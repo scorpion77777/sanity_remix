@@ -15,12 +15,12 @@ export function RecordCover(props: RecordCoverProps) {
 
   return (
 
-    <div className="aspect-square light:bg-white">
+    <div className="aspect-square light:bg-black">
       {image ? (
 
         <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <img
-            className="h-auto w-full object-cover shadow-black transition-all duration-200 group-hover:shadow-2xl group-hover:shadow-cyan-200"
+            className="h-auto w-full object-cover shadow-black transition-all duration-200 group-hover:shadow-2xl group-hover:shadow-cyan-200 bg-black"
             src={urlBuilder(projectDetails())
               // @ts-ignore
               .image(image.asset._ref)
@@ -32,11 +32,10 @@ export function RecordCover(props: RecordCoverProps) {
             alt={String(title) ?? ``}
             loading="lazy" />
 
-          <div className="p-5 dark:bg-black">
+          <div className="p-5 dark:bg-black ">
             <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white items-center">{title}</h5>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-40">Here are the biggest enterprise technology acquisitions of 2021 so far.</p>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far.</p>
             <button className="btn btn-sm bg-neutral-focus">read more</button>
-
           </div>
         </div>
 

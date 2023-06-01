@@ -47,7 +47,7 @@ export function LikeDislike(props: LikeDislikeProps) {
         type="submit"
         value="LIKE"
         disabled={isWorking}
-        className="flex items-center gap-2 bg-black p-4 transition-all duration-200 ease-in-out hover:bg-cyan-400 hover:text-black disabled:opacity-50"
+        className="flex items-center gap-2 bg-black p-4 transition-all duration-100 ease-in-out hover:bg-cyan-400 hover:text-black disabled:opacity-50"
         title="Like"
       >
         <span className="text-xs font-bold">{displayLikes}</span>
