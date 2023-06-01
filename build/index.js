@@ -246,7 +246,7 @@ function Logo(props) {
 // app/components/Footer.tsx
 var import_jsx_dev_runtime6 = require("react/jsx-dev-runtime");
 function Footer() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("header", { className: "border-t border-gray-100 transition-colors duration-1000 ease-in-out dark:border-gray-900", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "container mx-auto flex items-center justify-between p-4 lg:px-12", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Logo, {}, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("header", { className: "border-t border-gray-100 transition-colors duration-200 ease-in-out dark:border-gray-900", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "container mx-auto flex items-center justify-between p-4 lg:px-12", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Logo, {}, void 0, !1, {
     fileName: "app/components/Footer.tsx",
     lineNumber: 8,
     columnNumber: 9
@@ -297,7 +297,7 @@ function ThemeToggle() {
 // app/components/Header.tsx
 var import_jsx_dev_runtime8 = require("react/jsx-dev-runtime");
 function Header(props) {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("header", { className: "border-b border-gray-100 transition-colors duration-1000 ease-in-out dark:border-gray-900", children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "container mx-auto flex items-center justify-between p-4 lg:px-12 sticky z-auto", children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("header", { className: "border-b border-gray-100 transition-colors duration-200 ease-in-out dark:border-gray-900", children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "container mx-auto flex items-center justify-between p-4 lg:px-12 sticky z-auto", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(Logo, { siteTitle: props.siteTitle }, void 0, !1, {
       fileName: "app/components/Header.tsx",
       lineNumber: 16,
@@ -1210,7 +1210,7 @@ function RecordCover(props) {
     /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)(
       "img",
       {
-        className: "h-auto w-full object-cover shadow-black transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-cyan-200",
+        className: "h-auto w-full object-cover shadow-black transition-all duration-200 group-hover:shadow-2xl group-hover:shadow-cyan-200",
         src: (0, import_image_url2.default)(projectDetails()).image(image.asset._ref).height(800).width(800).fit("max").auto("format").url(),
         alt: String(title) ?? "",
         loading: "lazy"
@@ -1265,8 +1265,8 @@ var import_jsx_dev_runtime15 = require("react/jsx-dev-runtime");
 function Records(props) {
   let { records = [] } = props;
   return records.length > 0 ? /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("ul", { className: "grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-12 lg:grid-cols-3", children: records.map((record) => /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("li", { className: "group relative flex flex-col", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("div", { className: "relative overflow-hidden transition-all duration-200 ease-in-out group-hover:scale-105 group-hover:opacity-90", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("div", { className: "absolute z-0 h-48 w-[200%] translate-x-20 translate-y-20 -rotate-45 dark:bg-gradient-to-b from-black to-transparent opacity-25 mix-blend-overlay transition-transform duration-500 ease-in-out group-hover:translate-x-10 group-hover:translate-y-10 group-hover:opacity-75" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("div", { className: "relative overflow-hidden transition-all duration-100 ease-in-out group-hover:scale-105 group-hover:opacity-90", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("div", { className: "absolute z-0 h-48 w-[200%] translate-x-20 translate-y-20 -rotate-45 dark:bg-gradient-to-b from-black to-transparent opacity-25 mix-blend-overlay transition-transform duration-300 ease-in-out group-hover:translate-x-10 group-hover:translate-y-10 group-hover:opacity-75" }, void 0, !1, {
         fileName: "app/components/Records.tsx",
         lineNumber: 25,
         columnNumber: 13
@@ -1375,7 +1375,7 @@ function deduplicateDrafts(data) {
 }
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-65UGIO5N.css";
+var tailwind_default = "/build/_assets/tailwind-VJ6O2TDH.css";
 
 // app/types/record.ts
 var import_zod3 = require("zod"), recordZ = import_zod3.z.object({
@@ -1512,7 +1512,7 @@ function LikeDislike(props) {
             type: "submit",
             value: "LIKE",
             disabled: isWorking,
-            className: "flex items-center gap-2 bg-black p-4 transition-all duration-100 ease-in-out hover:bg-cyan-400 hover:text-black disabled:opacity-50",
+            className: "flex items-center gap-2 bg-black p-4 transition-all duration-200 ease-in-out hover:bg-cyan-400 hover:text-black disabled:opacity-50",
             title: "Like",
             children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("span", { className: "text-xs font-bold", children: displayLikes }, void 0, !1, {
@@ -1835,7 +1835,7 @@ function RecordPage() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "f374138a", entry: { module: "/build/entry.client-QXO2M26B.js", imports: ["/build/_shared/chunk-RZPD7QDG.js", "/build/_shared/chunk-SJDDFQ2Q.js", "/build/_shared/chunk-V4O2SHX5.js", "/build/_shared/chunk-5HQW4SWS.js", "/build/_shared/chunk-I4IZRGLP.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-QTIM3GC7.js", imports: ["/build/_shared/chunk-NFNY43FL.js", "/build/_shared/chunk-CQVITFUO.js", "/build/_shared/chunk-M2PEN2UP.js", "/build/_shared/chunk-6TKMBU2E.js", "/build/_shared/chunk-EZIV2XCM.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$slug": { id: "routes/$slug", parentId: "root", path: ":slug", index: void 0, caseSensitive: void 0, module: "/build/routes/$slug-4DU3CB6B.js", imports: ["/build/_shared/chunk-TGHXYJU4.js", "/build/_shared/chunk-DWGBMFOF.js", "/build/_shared/chunk-MOKFSLLC.js", "/build/_shared/chunk-E7KB5GSM.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-TGVJN6ZE.js", imports: ["/build/_shared/chunk-MOKFSLLC.js", "/build/_shared/chunk-E7KB5GSM.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/resource.og": { id: "routes/resource.og", parentId: "root", path: "resource/og", index: void 0, caseSensitive: void 0, module: "/build/routes/resource.og-T73I3IUQ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/resource.preview": { id: "routes/resource.preview", parentId: "root", path: "resource/preview", index: void 0, caseSensitive: void 0, module: "/build/routes/resource.preview-PDYO4H4J.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/resource.toggle-theme": { id: "routes/resource.toggle-theme", parentId: "root", path: "resource/toggle-theme", index: void 0, caseSensitive: void 0, module: "/build/routes/resource.toggle-theme-LCWYGFJH.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/studio.$": { id: "routes/studio.$", parentId: "root", path: "studio/*", index: void 0, caseSensitive: void 0, module: "/build/routes/studio.$-YNTZSOVV.js", imports: ["/build/_shared/chunk-XANHPADF.js", "/build/_shared/chunk-4NY5OEBK.js", "/build/_shared/chunk-EX55ICKE.js", "/build/_shared/chunk-TGHXYJU4.js", "/build/_shared/chunk-DWGBMFOF.js", "/build/_shared/chunk-E7KB5GSM.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-F374138A.js" };
+var assets_manifest_default = { version: "f8d0e84d", entry: { module: "/build/entry.client-QXO2M26B.js", imports: ["/build/_shared/chunk-RZPD7QDG.js", "/build/_shared/chunk-SJDDFQ2Q.js", "/build/_shared/chunk-V4O2SHX5.js", "/build/_shared/chunk-5HQW4SWS.js", "/build/_shared/chunk-I4IZRGLP.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-3B3WLFCG.js", imports: ["/build/_shared/chunk-NFNY43FL.js", "/build/_shared/chunk-CQVITFUO.js", "/build/_shared/chunk-M2PEN2UP.js", "/build/_shared/chunk-6TKMBU2E.js", "/build/_shared/chunk-EZIV2XCM.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$slug": { id: "routes/$slug", parentId: "root", path: ":slug", index: void 0, caseSensitive: void 0, module: "/build/routes/$slug-BSUU34VG.js", imports: ["/build/_shared/chunk-TGHXYJU4.js", "/build/_shared/chunk-DWGBMFOF.js", "/build/_shared/chunk-WRCLSDUL.js", "/build/_shared/chunk-E7KB5GSM.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-M374DR7R.js", imports: ["/build/_shared/chunk-WRCLSDUL.js", "/build/_shared/chunk-E7KB5GSM.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/resource.og": { id: "routes/resource.og", parentId: "root", path: "resource/og", index: void 0, caseSensitive: void 0, module: "/build/routes/resource.og-T73I3IUQ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/resource.preview": { id: "routes/resource.preview", parentId: "root", path: "resource/preview", index: void 0, caseSensitive: void 0, module: "/build/routes/resource.preview-PDYO4H4J.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/resource.toggle-theme": { id: "routes/resource.toggle-theme", parentId: "root", path: "resource/toggle-theme", index: void 0, caseSensitive: void 0, module: "/build/routes/resource.toggle-theme-LCWYGFJH.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/studio.$": { id: "routes/studio.$", parentId: "root", path: "studio/*", index: void 0, caseSensitive: void 0, module: "/build/routes/studio.$-YNTZSOVV.js", imports: ["/build/_shared/chunk-XANHPADF.js", "/build/_shared/chunk-4NY5OEBK.js", "/build/_shared/chunk-EX55ICKE.js", "/build/_shared/chunk-TGHXYJU4.js", "/build/_shared/chunk-DWGBMFOF.js", "/build/_shared/chunk-E7KB5GSM.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-F8D0E84D.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

@@ -20,7 +20,7 @@ export function RecordCover(props: RecordCoverProps) {
 
         <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <img
-            className="h-auto w-full object-cover shadow-black transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-cyan-200"
+            className="h-auto w-full object-cover shadow-black transition-all duration-200 group-hover:shadow-2xl group-hover:shadow-cyan-200"
             src={urlBuilder(projectDetails())
               // @ts-ignore
               .image(image.asset._ref)
