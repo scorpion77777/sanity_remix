@@ -22,7 +22,7 @@ npm run dev
 
 Now open the Studio at [localhost:3000/studio](http://localhost:3000/studio) and start authoring content!
 
-![Sanity Studio v3](./img/studio-page-dark.png)
+![Sanity Studio v3](./img/Screen Shot.png)
 
 ## Includes
 

@@ -443,7 +443,7 @@ function App() {
         lineNumber: 97,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("link", { rel: "icon", href: "https://fav.farm/\u{1F918}" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("link", { rel: "icon", href: "https://fav.farm/" }, void 0, !1, {
         fileName: "app/root.tsx",
         lineNumber: 98,
         columnNumber: 9
@@ -1196,10 +1196,10 @@ __export(index_exports, {
   loader: () => loader5,
   meta: () => meta2
 });
-var import_node7 = require("@remix-run/node"), import_react10 = require("@remix-run/react"), import_groq4 = __toESM(require("groq"));
+var import_node7 = require("@remix-run/node"), import_react9 = require("@remix-run/react"), import_groq4 = __toESM(require("groq"));
 
 // app/components/Records.tsx
-var import_react8 = require("@remix-run/react"), import_react9 = require("react");
+var import_react8 = require("@remix-run/react");
 
 // app/components/RecordCover.tsx
 var import_image_url2 = __toESM(require("@sanity/image-url"));
@@ -1224,20 +1224,20 @@ function RecordCover(props) {
       },
       this
     ),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { className: "p-5 bg-black", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { className: "p-5 dark:bg-black", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("h5", { className: " text-2xl font-bold tracking-tight text-gray-900 dark:text-white items-center", children: title }, void 0, !1, {
         fileName: "app/components/RecordCover.tsx",
-        lineNumber: 39,
+        lineNumber: 36,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("p", { className: "mb-3 font-normal text-gray-700 dark:text-gray-40", children: "Here are the biggest enterprise technology acquisitions of 2021 so far." }, void 0, !1, {
         fileName: "app/components/RecordCover.tsx",
-        lineNumber: 41,
+        lineNumber: 37,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("button", { className: "btn btn-sm bg-neutral-focus", children: "read more" }, void 0, !1, {
         fileName: "app/components/RecordCover.tsx",
-        lineNumber: 42,
+        lineNumber: 38,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
@@ -1251,7 +1251,7 @@ function RecordCover(props) {
     columnNumber: 9
   }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { className: "flex aspect-square w-full items-center justify-center bg-gray-100 text-gray-500", children: title ?? "Missing Record art" }, void 0, !1, {
     fileName: "app/components/RecordCover.tsx",
-    lineNumber: 48,
+    lineNumber: 44,
     columnNumber: 9
   }, this) }, void 0, !1, {
     fileName: "app/components/RecordCover.tsx",
@@ -1263,29 +1263,23 @@ function RecordCover(props) {
 // app/components/Records.tsx
 var import_jsx_dev_runtime15 = require("react/jsx-dev-runtime");
 function Records(props) {
-  let [search, setSearch] = (0, import_react9.useState)(""), { records = [] } = props;
-  return console.log(setSearch), records.length > 0 ? /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("ul", { className: "grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-12 lg:grid-cols-3", children: records.filter((val) => {
-    var _a;
-    if (setSearch == "")
-      return val;
-    if ((_a = val.title) != null && _a.toLowerCase().includes(search))
-      return val;
-  }).map((record) => /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("li", { className: "group relative flex flex-col", children: [
+  let { records = [] } = props;
+  return records.length > 0 ? /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("ul", { className: "grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-12 lg:grid-cols-3", children: records.map((record) => /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("li", { className: "group relative flex flex-col", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("div", { className: "relative overflow-hidden transition-all duration-200 ease-in-out group-hover:scale-105 group-hover:opacity-90", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("div", { className: "absolute z-0 h-48 w-[200%] translate-x-20 translate-y-20 -rotate-45 dark:bg-gradient-to-b from-black to-transparent opacity-25 mix-blend-overlay transition-transform duration-500 ease-in-out group-hover:translate-x-10 group-hover:translate-y-10 group-hover:opacity-75" }, void 0, !1, {
         fileName: "app/components/Records.tsx",
-        lineNumber: 36,
-        columnNumber: 15
+        lineNumber: 25,
+        columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(RecordCover, { image: record.image, title: record.title }, void 0, !1, {
         fileName: "app/components/Records.tsx",
-        lineNumber: 37,
-        columnNumber: 15
+        lineNumber: 26,
+        columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/Records.tsx",
-      lineNumber: 35,
-      columnNumber: 13
+      lineNumber: 24,
+      columnNumber: 11
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("div", { className: "flex flex-col", children: [
       record != null && record.slug ? /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
@@ -1296,37 +1290,37 @@ function Records(props) {
           className: "text-base",
           children: /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("span", { className: "absolute inset-0" }, void 0, !1, {
             fileName: "app/components/Records.tsx",
-            lineNumber: 48,
-            columnNumber: 19
+            lineNumber: 37,
+            columnNumber: 17
           }, this)
         },
         void 0,
         !1,
         {
           fileName: "app/components/Records.tsx",
-          lineNumber: 41,
-          columnNumber: 17
+          lineNumber: 30,
+          columnNumber: 15
         },
         this
       ) : /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("span", { className: "pt-4 text-2xl font-bold tracking-tighter", children: record.title }, void 0, !1, {
         fileName: "app/components/Records.tsx",
-        lineNumber: 51,
-        columnNumber: 17
+        lineNumber: 40,
+        columnNumber: 15
       }, this),
       record != null && record.artist ? /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("span", { className: "bg-black font-bold leading-none tracking-tighter text-white", children: record.artist }, void 0, !1, {
         fileName: "app/components/Records.tsx",
-        lineNumber: 56,
-        columnNumber: 17
+        lineNumber: 45,
+        columnNumber: 15
       }, this) : null
     ] }, void 0, !0, {
       fileName: "app/components/Records.tsx",
-      lineNumber: 39,
-      columnNumber: 13
+      lineNumber: 28,
+      columnNumber: 11
     }, this)
   ] }, record._id, !0, {
     fileName: "app/components/Records.tsx",
-    lineNumber: 34,
-    columnNumber: 11
+    lineNumber: 23,
+    columnNumber: 9
   }, this)) }, void 0, !1, {
     fileName: "app/components/Records.tsx",
     lineNumber: 21,
@@ -1334,24 +1328,24 @@ function Records(props) {
   }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("div", { className: "prose prose-xl mx-auto bg-green-50 p-4", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("p", { children: "No records found, yet!" }, void 0, !1, {
       fileName: "app/components/Records.tsx",
-      lineNumber: 66,
+      lineNumber: 55,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("p", { children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("a", { href: "/studio", children: "Log in to your Sanity Studio" }, void 0, !1, {
         fileName: "app/components/Records.tsx",
-        lineNumber: 68,
+        lineNumber: 57,
         columnNumber: 9
       }, this),
       " and start creating content!"
     ] }, void 0, !0, {
       fileName: "app/components/Records.tsx",
-      lineNumber: 67,
+      lineNumber: 56,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/Records.tsx",
-    lineNumber: 65,
+    lineNumber: 54,
     columnNumber: 5
   }, this);
 }
@@ -1381,7 +1375,7 @@ function deduplicateDrafts(data) {
 }
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-2KUTW56M.css";
+var tailwind_default = "/build/_assets/tailwind-65UGIO5N.css";
 
 // app/types/record.ts
 var import_zod3 = require("zod"), recordZ = import_zod3.z.object({
@@ -1432,7 +1426,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), links3 = () => 
   });
 };
 function Index() {
-  let { records = [], query: query2, params } = (0, import_react10.useLoaderData)(), { home, query: homeQuery, params: homeParams } = useRootLoaderData();
+  let { records = [], query: query2, params } = (0, import_react9.useLoaderData)(), { home, query: homeQuery, params: homeParams } = useRootLoaderData();
   return /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "grid grid-cols-1 gap-6 md:gap-12", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
       PreviewWrapper,
@@ -1492,13 +1486,13 @@ __export(slug_exports, {
   loader: () => loader6,
   meta: () => meta3
 });
-var import_node8 = require("@remix-run/node"), import_react13 = require("@remix-run/react"), import_groq5 = __toESM(require("groq"));
+var import_node8 = require("@remix-run/node"), import_react12 = require("@remix-run/react"), import_groq5 = __toESM(require("groq"));
 
 // app/components/LikeDislike.tsx
-var import_react11 = require("@remix-run/react"), import_lucide_react7 = require("lucide-react"), import_jsx_dev_runtime18 = require("react/jsx-dev-runtime");
+var import_react10 = require("@remix-run/react"), import_lucide_react7 = require("lucide-react"), import_jsx_dev_runtime18 = require("react/jsx-dev-runtime");
 function LikeDislike(props) {
   var _a, _b;
-  let { id } = props, fetcher = (0, import_react11.useFetcher)(), location = (0, import_react11.useLocation)(), isDone = fetcher.state === "idle" && fetcher.data !== null, isWorking = fetcher.state === "loading" || fetcher.state === "submitting", likes = isDone && Number((_a = fetcher == null ? void 0 : fetcher.data) == null ? void 0 : _a.likes) ? fetcher.data.likes : props == null ? void 0 : props.likes, displayLikes = (fetcher.formData && fetcher.formData.get("action") === "LIKE" ? likes + 1 : likes) || likes, dislikes = isDone && Number((_b = fetcher == null ? void 0 : fetcher.data) == null ? void 0 : _b.dislikes) ? fetcher.data.dislikes : props == null ? void 0 : props.dislikes, displayDislikes = (fetcher.formData && fetcher.formData.get("action") === "DISLIKE" ? dislikes + 1 : dislikes) || dislikes;
+  let { id } = props, fetcher = (0, import_react10.useFetcher)(), location = (0, import_react10.useLocation)(), isDone = fetcher.state === "idle" && fetcher.data !== null, isWorking = fetcher.state === "loading" || fetcher.state === "submitting", likes = isDone && Number((_a = fetcher == null ? void 0 : fetcher.data) == null ? void 0 : _a.likes) ? fetcher.data.likes : props == null ? void 0 : props.likes, displayLikes = (fetcher.formData && fetcher.formData.get("action") === "LIKE" ? likes + 1 : likes) || likes, dislikes = isDone && Number((_b = fetcher == null ? void 0 : fetcher.data) == null ? void 0 : _b.dislikes) ? fetcher.data.dislikes : props == null ? void 0 : props.dislikes, displayDislikes = (fetcher.formData && fetcher.formData.get("action") === "DISLIKE" ? dislikes + 1 : dislikes) || dislikes;
   return /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)(
     fetcher.Form,
     {
@@ -1597,7 +1591,7 @@ function LikeDislike(props) {
 }
 
 // app/components/SanityContent.tsx
-var import_react12 = require("@portabletext/react");
+var import_react11 = require("@portabletext/react");
 
 // app/components/SanityImage.tsx
 var import_asset_utils = require("@sanity/asset-utils"), import_image_url3 = __toESM(require("@sanity/image-url"));
@@ -1637,7 +1631,7 @@ var import_jsx_dev_runtime20 = require("react/jsx-dev-runtime"), components = {
 };
 function SanityContent(props) {
   let { value } = props;
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { className: "prose font-serif dark:prose-invert md:prose-2xl prose-a:text-cyan-600 dark:prose-a:text-cyan-200", children: /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)(import_react12.PortableText, { value, components }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { className: "prose font-serif dark:prose-invert md:prose-2xl prose-a:text-cyan-600 dark:prose-a:text-cyan-200", children: /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)(import_react11.PortableText, { value, components }, void 0, !1, {
     fileName: "app/components/SanityContent.tsx",
     lineNumber: 20,
     columnNumber: 7
@@ -1820,7 +1814,7 @@ var import_jsx_dev_runtime22 = require("react/jsx-dev-runtime"), links4 = () => 
   });
 };
 function RecordPage() {
-  let { record, query: query2, params } = (0, import_react13.useLoaderData)();
+  let { record, query: query2, params } = (0, import_react12.useLoaderData)();
   return /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(
     PreviewWrapper,
     {
@@ -1841,7 +1835,7 @@ function RecordPage() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "9f16ce38", entry: { module: "/build/entry.client-QXO2M26B.js", imports: ["/build/_shared/chunk-RZPD7QDG.js", "/build/_shared/chunk-SJDDFQ2Q.js", "/build/_shared/chunk-V4O2SHX5.js", "/build/_shared/chunk-5HQW4SWS.js", "/build/_shared/chunk-I4IZRGLP.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-C6BFMKXT.js", imports: ["/build/_shared/chunk-NFNY43FL.js", "/build/_shared/chunk-CQVITFUO.js", "/build/_shared/chunk-M2PEN2UP.js", "/build/_shared/chunk-6TKMBU2E.js", "/build/_shared/chunk-EZIV2XCM.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$slug": { id: "routes/$slug", parentId: "root", path: ":slug", index: void 0, caseSensitive: void 0, module: "/build/routes/$slug-LMIRZHWN.js", imports: ["/build/_shared/chunk-TGHXYJU4.js", "/build/_shared/chunk-DWGBMFOF.js", "/build/_shared/chunk-LL2RBC7I.js", "/build/_shared/chunk-E7KB5GSM.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-M3FDXXJW.js", imports: ["/build/_shared/chunk-LL2RBC7I.js", "/build/_shared/chunk-E7KB5GSM.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/resource.og": { id: "routes/resource.og", parentId: "root", path: "resource/og", index: void 0, caseSensitive: void 0, module: "/build/routes/resource.og-T73I3IUQ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/resource.preview": { id: "routes/resource.preview", parentId: "root", path: "resource/preview", index: void 0, caseSensitive: void 0, module: "/build/routes/resource.preview-PDYO4H4J.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/resource.toggle-theme": { id: "routes/resource.toggle-theme", parentId: "root", path: "resource/toggle-theme", index: void 0, caseSensitive: void 0, module: "/build/routes/resource.toggle-theme-LCWYGFJH.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/studio.$": { id: "routes/studio.$", parentId: "root", path: "studio/*", index: void 0, caseSensitive: void 0, module: "/build/routes/studio.$-YNTZSOVV.js", imports: ["/build/_shared/chunk-XANHPADF.js", "/build/_shared/chunk-4NY5OEBK.js", "/build/_shared/chunk-EX55ICKE.js", "/build/_shared/chunk-TGHXYJU4.js", "/build/_shared/chunk-DWGBMFOF.js", "/build/_shared/chunk-E7KB5GSM.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-9F16CE38.js" };
+var assets_manifest_default = { version: "f374138a", entry: { module: "/build/entry.client-QXO2M26B.js", imports: ["/build/_shared/chunk-RZPD7QDG.js", "/build/_shared/chunk-SJDDFQ2Q.js", "/build/_shared/chunk-V4O2SHX5.js", "/build/_shared/chunk-5HQW4SWS.js", "/build/_shared/chunk-I4IZRGLP.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-QTIM3GC7.js", imports: ["/build/_shared/chunk-NFNY43FL.js", "/build/_shared/chunk-CQVITFUO.js", "/build/_shared/chunk-M2PEN2UP.js", "/build/_shared/chunk-6TKMBU2E.js", "/build/_shared/chunk-EZIV2XCM.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$slug": { id: "routes/$slug", parentId: "root", path: ":slug", index: void 0, caseSensitive: void 0, module: "/build/routes/$slug-4DU3CB6B.js", imports: ["/build/_shared/chunk-TGHXYJU4.js", "/build/_shared/chunk-DWGBMFOF.js", "/build/_shared/chunk-MOKFSLLC.js", "/build/_shared/chunk-E7KB5GSM.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-TGVJN6ZE.js", imports: ["/build/_shared/chunk-MOKFSLLC.js", "/build/_shared/chunk-E7KB5GSM.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/resource.og": { id: "routes/resource.og", parentId: "root", path: "resource/og", index: void 0, caseSensitive: void 0, module: "/build/routes/resource.og-T73I3IUQ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/resource.preview": { id: "routes/resource.preview", parentId: "root", path: "resource/preview", index: void 0, caseSensitive: void 0, module: "/build/routes/resource.preview-PDYO4H4J.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/resource.toggle-theme": { id: "routes/resource.toggle-theme", parentId: "root", path: "resource/toggle-theme", index: void 0, caseSensitive: void 0, module: "/build/routes/resource.toggle-theme-LCWYGFJH.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/studio.$": { id: "routes/studio.$", parentId: "root", path: "studio/*", index: void 0, caseSensitive: void 0, module: "/build/routes/studio.$-YNTZSOVV.js", imports: ["/build/_shared/chunk-XANHPADF.js", "/build/_shared/chunk-4NY5OEBK.js", "/build/_shared/chunk-EX55ICKE.js", "/build/_shared/chunk-TGHXYJU4.js", "/build/_shared/chunk-DWGBMFOF.js", "/build/_shared/chunk-E7KB5GSM.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-F374138A.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
