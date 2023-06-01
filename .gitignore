@@ -1,6 +1,6 @@
-/node_modules
-/.cache
-/build
+node_modules
+.cache
+build
 /public/build
-/.env
+.env
 !.env.template
