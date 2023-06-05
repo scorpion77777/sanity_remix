@@ -5,16 +5,17 @@ import { Link } from '@remix-run/react'
 import { RecordCover } from '~/components/RecordCover'
 import type { RecordStub } from '~/types/record'
 
+import { useSearchParams } from "react-router-dom";
+
 type RecordsProps = {
   records: RecordStub[]
 }
 
 export function Records(props: RecordsProps) {
 
+  let [searchParams, setSearchParams] = useSearchParams("");
+
   const { records = [] } = props
-
-
-
 
 
   return records.length > 0 ? (

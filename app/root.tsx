@@ -56,7 +56,8 @@ export const loader = async ({ request }: LoaderArgs) => {
   // Sanity content throughout the site
   const query = groq`*[_id == "home"][0]{
     title,
-    siteTitle
+    siteTitle,
+    subTitle,
   }`
   const home = await getClient(preview)
     .fetch(query)
@@ -105,6 +106,7 @@ export default function App() {
         ) : (
           <>
             <Header siteTitle={home?.siteTitle} />
+            
             <div className="container mx-auto p-4 lg:p-12">
               <Outlet />
             </div>

@@ -12,7 +12,7 @@ import { defaultDocumentNode, structure } from '~/sanity/structure'
 export const config = defineConfig({
   ...projectDetails(),
   name: 'sanity-remix',
-  title: 'Sanity Remix',
+  title: 'Sanity Remix!',
   plugins: [deskTool({ structure, defaultDocumentNode }), visionTool(), vercelDeployTool()],
   basePath: `/studio`,
   schema: {

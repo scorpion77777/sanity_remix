@@ -20,7 +20,7 @@ export function Logo(props: LogoProps) {
   }
 
   return (
-    <p className="text-lg font-bold tracking-tighter text-black dark:text-white lg:text-2xl">
+    <p className="text-lg font-bold tracking-tighter text-black dark:text-yellow-200 lg:text-2xl">
       <PreviewWrapper
         data={{ siteTitle }}
         render={({ siteTitle }) => (

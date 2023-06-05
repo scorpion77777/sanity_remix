@@ -1,5 +1,5 @@
-import {Home} from 'lucide-react'
-import {defineField, defineType} from 'sanity'
+import { Home } from 'lucide-react'
+import { defineField, defineType } from 'sanity'
 
 export const homeType = defineType({
   name: 'home',
@@ -13,6 +13,10 @@ export const homeType = defineType({
     }),
     defineField({
       name: 'siteTitle',
+      type: 'string',
+    }),
+    defineField({
+      name: 'subTitle',
       type: 'string',
     }),
   ],
