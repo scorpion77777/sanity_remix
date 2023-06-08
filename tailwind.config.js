@@ -7,5 +7,9 @@ module.exports = {
   content: ["./app/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
   theme,
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("daisyui"),
+    require("tw-elements/dist/plugin.cjs"),
+  ],
 };
