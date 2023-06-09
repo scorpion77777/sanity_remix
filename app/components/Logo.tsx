@@ -24,7 +24,7 @@ export function Logo(props: LogoProps) {
       <PreviewWrapper
         data={{ siteTitle }}
         render={({ siteTitle }) => (
-          <Link to="/">{siteTitle ?? `Sanity Remix`}</Link>
+          <Link to="/">{siteTitle ?? `Vahan.Martirosyan`}</Link>
         )}
         query={homeQuery}
         params={homeParams}

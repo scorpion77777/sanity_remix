@@ -23,7 +23,7 @@ import { getClient } from '~/sanity/client'
 import { homeZ } from '~/types/home'
 
 
-import KeenSlider from './components/Slider'
+//import KeenSlider from './components/Slider'
 
 export const links: LinksFunction = () => {
   return [
@@ -109,8 +109,9 @@ export default function App() {
         ) : (
           <>
             <Header siteTitle={home?.siteTitle} />
-            <KeenSlider />
+
             <div className="container mx-auto p-4 lg:p-12">
+
               <Outlet />
             </div>
             <Footer />
