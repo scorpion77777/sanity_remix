@@ -5,7 +5,7 @@ import { Link } from '@remix-run/react'
 import { RecordCover } from '~/components/RecordCover'
 import type { RecordStub } from '~/types/record'
 
-import { useSearchParams } from "react-router-dom";
+
 
 type RecordsProps = {
   records: RecordStub[]
@@ -13,7 +13,7 @@ type RecordsProps = {
 
 export function Records(props: RecordsProps) {
 
-  let [searchParams, setSearchParams] = useSearchParams("");
+
 
   const { records = [] } = props
 
@@ -26,7 +26,7 @@ export function Records(props: RecordsProps) {
             <div className="absolute z-0 h-48 w-[200%] translate-x-20 translate-y-20 -rotate-45 dark:bg-gradient-to-b from-black to-transparent opacity-25 mix-blend-overlay transition-transform duration-300 ease-in-out group-hover:translate-x-10 group-hover:translate-y-10 group-hover:opacity-75" />
             <RecordCover image={record.image} title={record.title} />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col text-blue-700">
             {record?.slug ? (
               <Link
                 prefetch="intent"

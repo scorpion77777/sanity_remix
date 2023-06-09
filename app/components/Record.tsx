@@ -19,7 +19,7 @@ export function Record(props: RecordDocument) {
         <header>
           {title ? <Title>{title}</Title> : null}
           {artist ? (
-            <h2 className="bg-black text-2xl font-bold tracking-tighter text-white">
+            <h2 className="bg-black text-2xl font-bold tracking-tighter text-yellow-300">
               {artist}
             </h2>
           ) : null}
