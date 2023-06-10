@@ -33,11 +33,7 @@ export function RecordCover(props: RecordCoverProps) {
             alt={String(title) ?? ``}
             loading="lazy" />
 
-          <div className="p-5 dark:bg-black ">
-            <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white items-center">{title}</h5>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{content}</p>
-            <button className="btn btn-sm bg-blue-600 dark:bg-yellow-300 dark:text-black">read more</button>
-          </div>
+
         </div>
 
       ) : (
