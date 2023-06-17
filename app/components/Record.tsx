@@ -6,6 +6,7 @@ import { Title } from '~/components/Title'
 import { secondsToMinutes } from '~/lib/secondsToMinutes'
 import type { RecordDocument } from '~/types/record'
 
+
 export function Record(props: RecordDocument) {
   const { _id, title, artist, content, image, tracks, likes, dislikes } = props
 
@@ -51,5 +52,6 @@ export function Record(props: RecordDocument) {
         ) : null}
       </div>
     </article>
+
   )
 }

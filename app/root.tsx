@@ -21,6 +21,7 @@ import { getBodyClassNames } from '~/lib/getBodyClassNames'
 import { getPreviewToken } from '~/lib/getPreviewToken'
 import { getClient } from '~/sanity/client'
 import { homeZ } from '~/types/home'
+import Slider from './components/Slider'
 
 export const links: LinksFunction = () => {
   return [
@@ -35,10 +36,7 @@ export const links: LinksFunction = () => {
       href: 'https://fonts.googleapis.com',
       crossOrigin: 'anonymous',
     },
-    {
-      href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&family=Inter:wght@500;700;800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap',
-      rel: 'stylesheet',
-    },
+
   ]
 }
 
@@ -91,6 +89,7 @@ export default function App() {
   return (
     <html lang="en">
       <head>
+        <meta name="E-Commerce Store"></meta>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <Meta />
@@ -105,10 +104,14 @@ export default function App() {
           <Outlet />
         ) : (
           <>
+
             <Header siteTitle={home?.siteTitle} />
+            <Slider />
 
             <div className="container mx-auto p-4 lg:p-12">
+
               <Outlet />
+
             </div>
             <Footer />
           </>

@@ -4,6 +4,11 @@
 const { theme } = require("@sanity/demo/tailwind");
 
 module.exports = {
+  theme: {
+    container: {
+      center: true,
+    },
+  },
   content: ["./app/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
   theme,

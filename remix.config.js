@@ -1,5 +1,11 @@
 /** @type {import('@remix-run/dev').AppConfig} */
 module.exports = {
+  serverDependenciesToBundle: [
+    /^atropos.*/,
+    /^remark.*/,
+    /^unified.*/,
+    "@sindresorhus/slugify",
+  ],
   ignoredRouteFiles: ["**/.*"],
   tailwind: true,
   serverModuleFormat: "cjs",
