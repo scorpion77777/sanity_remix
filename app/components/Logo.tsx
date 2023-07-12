@@ -20,11 +20,11 @@ export function Logo(props: LogoProps) {
   }
 
   return (
-    <p className=" font-bold tracking-tighter lg:text-2xl hidden md:block  ">
+    <p className=" font-bold visible  tracking-tighter md:text-2xl lg:text-2xl">
       <PreviewWrapper
         data={{ siteTitle }}
         render={({ siteTitle }) => (
-          <Link to="/">{siteTitle ?? `Vahan.Martirosyan`}</Link>
+          <Link to="/">{siteTitle ?? ``}</Link>
         )}
         query={homeQuery}
         params={homeParams}

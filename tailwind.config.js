@@ -5,6 +5,7 @@ const { theme } = require("@sanity/demo/tailwind");
 
 module.exports = {
   theme: {
+    
     container: {
       center: true,
     },

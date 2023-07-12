@@ -21,7 +21,7 @@ import { getBodyClassNames } from '~/lib/getBodyClassNames'
 import { getPreviewToken } from '~/lib/getPreviewToken'
 import { getClient } from '~/sanity/client'
 import { homeZ } from '~/types/home'
-import Slider from './components/Slider'
+//import Slider from './components/Slider'
 
 export const links: LinksFunction = () => {
   return [
@@ -106,7 +106,7 @@ export default function App() {
           <>
 
             <Header siteTitle={home?.siteTitle} />
-            <Slider />
+
 
             <div className="container mx-auto p-4 lg:p-12">
 
